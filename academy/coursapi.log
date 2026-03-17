@@ -1,0 +1,2 @@
+2026-03-16 13:39:22,525 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-16 13:39:24,550 | INFO | django.utils.autoreload | C:\Users\saloni.p\Desktop\Academy Management Backend\academy\academy\settings.py changed, reloading.

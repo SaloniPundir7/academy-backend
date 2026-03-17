@@ -1,0 +1,4 @@
+2026-03-16 13:39:25,787 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-16 13:39:40,535 | INFO | courses.middleware | Request | User: Anonymous | Method: GET | Path: /api/courses/
+2026-03-16 13:39:40,582 | INFO | courses.middleware | Response | Status: 200 | Path: /api/courses/
+2026-03-17 11:35:33,694 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
