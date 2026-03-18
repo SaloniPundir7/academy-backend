@@ -2,3 +2,38 @@
 2026-03-16 13:39:40,535 | INFO | courses.middleware | Request | User: Anonymous | Method: GET | Path: /api/courses/
 2026-03-16 13:39:40,582 | INFO | courses.middleware | Response | Status: 200 | Path: /api/courses/
 2026-03-17 11:35:33,694 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-17 15:45:52,272 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 10:42:37,254 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 10:43:08,046 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 10:44:54,628 | INFO | courses.middleware | Request | User: Anonymous | Method: POST | Path: /api/payments/
+2026-03-18 10:44:54,827 | INFO | courses.middleware | Response | Status: 401 | Path: /api/payments/
+2026-03-18 10:44:54,854 | WARNING | django.request | Unauthorized: /api/payments/
+2026-03-18 10:45:28,157 | INFO | courses.middleware | Request | User: Anonymous | Method: POST | Path: /api/token/
+2026-03-18 10:45:29,100 | INFO | courses.middleware | Response | Status: 200 | Path: /api/token/
+2026-03-18 10:46:25,207 | INFO | courses.middleware | Request | User: Anonymous | Method: POST | Path: /api/payments/
+2026-03-18 10:46:25,213 | INFO | courses.middleware | Response | Status: 415 | Path: /api/payments/
+2026-03-18 10:46:25,213 | WARNING | django.request | Unsupported Media Type: /api/payments/
+2026-03-18 10:47:01,541 | INFO | courses.middleware | Request | User: Anonymous | Method: POST | Path: /api/payments/
+2026-03-18 10:47:01,546 | INFO | courses.middleware | Response | Status: 400 | Path: /api/payments/
+2026-03-18 10:47:01,546 | WARNING | django.request | Bad Request: /api/payments/
+2026-03-18 10:48:03,574 | INFO | courses.middleware | Request | User: Anonymous | Method: GET | Path: /api/course-stats/
+2026-03-18 10:48:03,576 | INFO | courses.middleware | Response | Status: 401 | Path: /api/course-stats/
+2026-03-18 10:48:03,576 | WARNING | django.request | Unauthorized: /api/course-stats/
+2026-03-18 10:50:02,441 | INFO | courses.middleware | Request | User: Anonymous | Method: GET | Path: /api/my-courses/
+2026-03-18 10:50:02,503 | INFO | courses.middleware | Response | Status: 200 | Path: /api/my-courses/
+2026-03-18 10:51:10,105 | INFO | courses.middleware | Request | User: Anonymous | Method: POST | Path: /api/courses/
+2026-03-18 10:51:10,179 | INFO | courses.middleware | Response | Status: 201 | Path: /api/courses/
+2026-03-18 10:51:45,301 | INFO | courses.middleware | Request | User: Anonymous | Method: POST | Path: /api/courses/
+2026-03-18 10:51:45,306 | INFO | courses.middleware | Response | Status: 400 | Path: /api/courses/
+2026-03-18 10:51:45,307 | WARNING | django.request | Bad Request: /api/courses/
+2026-03-18 10:52:25,058 | INFO | courses.middleware | Request | User: Anonymous | Method: PATCH | Path: /api/courses/
+2026-03-18 10:52:25,063 | INFO | courses.middleware | Response | Status: 405 | Path: /api/courses/
+2026-03-18 10:52:25,063 | WARNING | django.request | Method Not Allowed: /api/courses/
+2026-03-18 10:53:28,295 | INFO | django.utils.autoreload | C:\Users\saloni.p\Desktop\Academy Management Backend\academy\enrollments\admin.py changed, reloading.
+2026-03-18 10:53:29,724 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 11:01:49,775 | INFO | django.utils.autoreload | C:\Users\saloni.p\Desktop\Academy Management Backend\academy\academy\settings.py changed, reloading.
+2026-03-18 11:01:51,138 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 11:04:18,806 | INFO | django.utils.autoreload | C:\Users\saloni.p\Desktop\Academy Management Backend\academy\enrollments\models.py changed, reloading.
+2026-03-18 11:04:20,085 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 11:08:23,592 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2026-03-18 12:11:47,542 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
