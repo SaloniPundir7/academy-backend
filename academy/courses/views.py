@@ -127,24 +127,23 @@ class CourseLessonsView(APIView):
 
     
 
-   from rest_framework.exceptions import PermissionDenied
+   
+    def get(self, request, course_id):
 
-def get(self, request, course_id):
-
-    lessons = Lesson.objects.filter(course_id=course_id).order_by("order")
+      lessons = Lesson.objects.filter(course_id=course_id).order_by("order")
 
     # Allow FREE lessons to everyone
-    free_lessons = lessons.filter(is_free=True)
+      free_lessons = lessons.filter(is_free=True)
 
     # Check enrollment
-    is_enrolled = Enrollment.objects.filter(
+      is_enrolled = Enrollment.objects.filter(
         student=request.user,
         course_id=course_id
-    ).exists()
+       ).exists()
 
-    if not is_enrolled:
+      if not is_enrolled:
         serializer = LessonSerializer(free_lessons, many=True)
         return api_response(serializer.data, "Free lessons only (not enrolled)")
 
-    serializer = LessonSerializer(lessons, many=True)
-    return api_response(serializer.data, "All lessons fetched")
+      serializer = LessonSerializer(lessons, many=True)
+      return api_response(serializer.data, "All lessons fetched")
