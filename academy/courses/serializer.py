@@ -14,4 +14,13 @@ class LessonSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Lesson
-        fields = ["id", "title", "video_url", "course", "order"]
+        fields = ["id", "title", "video_url", "course", "order", "duration", "is_free"]
+
+    def validate(self, data):
+        course = data.get("course")
+        order = data.get("order")
+
+        if Lesson.objects.filter(course=course, order=order).exists():
+            raise serializers.ValidationError("Lesson order already exists for this course")
+
+        return data

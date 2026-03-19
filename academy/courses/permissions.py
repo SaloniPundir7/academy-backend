@@ -4,4 +4,4 @@ class IsCourseOwner(BasePermission):
 
     def has_object_permission(self, request, view, obj):
 
-        return obj.created_by == request.user
+        return obj.course.created_by == request.user
